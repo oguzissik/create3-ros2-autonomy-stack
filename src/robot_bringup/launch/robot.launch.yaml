@@ -1,0 +1,23 @@
+launch:
+
+- include:
+    file: "$(find-pkg-share robot_bringup)/launch/robot_tf.launch.yaml"
+
+- include:
+    file: "$(find-pkg-share robot_bringup)/launch/lidar.launch.py"
+
+- include:
+    file: "$(find-pkg-share robot_bringup)/launch/camera.launch.py"
+
+- include:
+    file: "$(find-pkg-share aruco_opencv_bringup)/launch/aruco_opencv.launch.py"
+
+- include:
+    file: "$(find-pkg-share robot_bringup)/launch/republisher.launch.py"
+
+
+- node:
+    pkg: "rviz2"
+    exec: "rviz2"
+    name: "rviz2"
+    output: "screen"
