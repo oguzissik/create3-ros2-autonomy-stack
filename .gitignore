@@ -20,3 +20,4 @@ Thumbs.db
 *YOLO*
 src/robot_bringup/config/left-*.png
 src/robot_bringup/config/calibrationdata.tar.gz
+src/create3_examples/
